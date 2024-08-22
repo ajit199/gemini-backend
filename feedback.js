@@ -26,18 +26,16 @@ async function getFeedback(req, res) {
         This is a post from a social platform , you can check the content of the post below:
         Post text : ${caption} \n
         According to an expert any social media post can be judged based on 3 factors: \n
-
-        Author Bias
+        Author Credibility
         Evidence
         Influence
-
         Each factor can have a value of low, medium and high
-
-        Our experts said that in this particular post which i have attached the author bias is ${ratings.author_bias.rating}, evidence is ${ratings.evidence.rating} and influence is ${ratings.influence.rating}.
+        High influence means that author is trying to influence in the post , so high influence is not good
+        High author credibility and high evidence is good
+        Our experts said that in this particular post which i have attached the author credibility is ${ratings.author_bias.rating}, evidence is ${ratings.evidence.rating} and influence is ${ratings.influence.rating}.
         Can you generate a 1 line summary defining the reliability summary of this based on the above analysis by our experts
-
         Also please find the explanation of each analysis
-        Why author bias is ${ratings.author_bias.rating} ? - ${ratings.author_bias.explanation} \n
+        Why author credibility is ${ratings.author_bias.rating} ? - ${ratings.author_bias.explanation} \n
         Why evidence is ${ratings.evidence.rating}? -  ${ratings.evidence.explanation} \n
         Why influence is ${ratings.influence.rating}? -  ${ratings.influence.explanation} \n
       `);
