@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const geminiApiKey = `AIzaSyA825kHac32VZwQabjdWynaZcKEv4k0g34`;
+const geminiApiKey = `AIzaSyDDobdhUwbwsuze1Itfm5bpm4qRPtN8HzU`;
 const genAI = new GoogleGenerativeAI(geminiApiKey);
 
 async function getFeedback(req, res) {
